@@ -1,0 +1,51 @@
+ % mkdir git_challenge
+ git_tutorial % 
+ git_tutorial % cd git_challenge
+ git_challenge % 
+ git_challenge % 
+ git_challenge % touch hello_world.txt
+ 
+ git_challenge % ls
+hello_world.txt
+ git_challenge % 
+ git_challenge % git add .
+ git_challenge % 
+ git_challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   hello_world.txt
+
+ git_challenge % 
+ git_challenge % git commit -m "1回目のコミット"
+[main eed00d4] 1回目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_challenge/hello_world.txt
+ git_challenge % 
+ git_challenge % git add hello_world.txt
+ git_challenge % 
+ git_challenge % git status                     
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   hello_world.txt
+
+ git_challenge % git commit -m "2回目のコミット"
+[main 0d948d4] 2回目のコミット
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ % 
+ 
+ % 
+ % git log --oneline
+0d948d4 (HEAD -> main) 2回目のコミット
+eed00d4 1回目のコミット
+ca00f4a (origin/main) Ignore .DS_Store
+84f9a6d 変更をローカルにコミット
+dbaad86 ローカルにコミット
+
+ git_challenge % 
